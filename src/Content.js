@@ -17,8 +17,10 @@ class Content extends React.Component {
             <div className="line"></div>
 
             {/*Timeline item*/}
-            {activities.map((activities) => {
+            {activities.map(activities => {
+                return (
               <ActivityItem activities={activities} />
+                );
             })}
             
         </div>

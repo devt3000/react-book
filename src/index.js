@@ -19,6 +19,31 @@ const activity = {
         ]
     };
 
-ReactDOM.render(<App />, document.getElementById('root'));
+    const activities = [
+        {
+          timestamp: new Date().getTime(),
+          text: "Ate lunch",
+          user: {
+            id: 1,
+            name: 'Nate',
+            avatar: './doug.jpg'
+          },
+          comments: [
+            { from: 'Ari', text: 'Me too' }
+          ]
+        },
+        {
+          timestamp: new Date().getTime(),
+          text: "Woke up early for a beautiful run",
+          user: {
+            id: 2, 
+            name: 'Ari',
+            avatar: './doug.jpg'
+          },
+          comments: [{ from: 'Nate', text: 'I am so jealous' }]
+        }
+      ]
+
+ReactDOM.render(<App activities={activities} />, document.getElementById('root'));
 registerServiceWorker();
 
