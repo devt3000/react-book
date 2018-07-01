@@ -5,6 +5,7 @@ import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 import Header from './Header';
 import Content from './Content';
+import timeline from './styles/timeline.css';
 
 const activity = {
         timestamp: new Date().getTime(),
